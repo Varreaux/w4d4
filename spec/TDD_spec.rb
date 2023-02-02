@@ -9,6 +9,15 @@ describe "TDD" do
         end
     end
 
-    
+    describe "#two_sum" do
+        it "returns array of pairs of positions that sums to zero" do
+           expect([-1, 0, 2, -2, 1].two_sum).to eq([[0, 4], [2, 3]]) 
+        end
+
+
+    end
+
 
 end
+
+

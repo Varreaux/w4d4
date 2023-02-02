@@ -23,8 +23,14 @@ class Array
         return pos
     end
 
-
-
-
+    def my_transpose
+        arr = Array.new(self.length) { Array.new() }
+        self.each_with_index do |ele1, i|
+            self.each_with_index do |ele2, ii|
+                arr[ii] << self[i][ii]
+            end
+        end
+        return arr
+    end
 
 end

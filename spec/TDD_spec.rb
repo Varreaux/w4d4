@@ -32,6 +32,13 @@ describe "TDD" do
     end
 
 
+    describe "#stock_picker" do
+        it "returns the most profitable pair of days " do
+
+            expect(stock_picker([5, 2, 4, 98, 5, 76, 101])).to eq([2, 101])
+        end
+    end
+
 end
 
 

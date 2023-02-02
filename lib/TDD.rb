@@ -34,3 +34,20 @@ class Array
     end
 
 end
+
+
+    def stock_picker(arr)
+        
+       max_pair = [0]
+       (0...arr.length).each do |i1|
+            (i1+1...arr.length).each do |i2|
+                if (arr[i2] - arr[i1]) > (max_pair.last - max_pair.first)
+                    max_pair = [arr[i1], arr[i2]]
+                end
+            end  
+        end
+        return max_pair
+    end
+
+
+    

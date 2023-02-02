@@ -49,5 +49,11 @@ end
         return max_pair
     end
 
+class Tower
+    attr_reader :stacks
 
-    
+    def initialize
+        @stacks = [ [1, 2, 3, 4], [], [] ]
+    end
+
+end

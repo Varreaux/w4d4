@@ -1,7 +1,7 @@
 require 'rspec'
 require 'TDD'
 
-describe "TDD" do
+describe "Array" do
     
     describe "#my_uniq" do
         it "returns unique elements" do
@@ -41,4 +41,27 @@ describe "TDD" do
 
 end
 
+describe "Tower" do
 
+    # tower -> 
+    # stacks = [ [1, 2, 3, 4], [], [] ]
+
+    subject(:tower) { Tower.new }
+
+    describe "#initialize" do
+
+        it "has the correct amount of stacks" do
+            expect(tower.stacks.length).to eq(3)
+        end
+
+        it "has disks in correct order" do
+            expect(tower.stacks[0]).to eq(tower.stacks[0].sort)
+        end
+
+    end
+
+end
+
+# start -> 
+# end -> 0 < move <= 2
+#       
